@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+<!--navigation-->
+<nav th:replace="_fragments :: menu(3)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="folder icon"></i>分类</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--content-->
+<div class="c5 m-padding-big">
+    <!--sort-->
+    <div class="ui segments m-margin-medium">
+        <div class="ui segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui orange header">所有标签</h3>
+                </div>
+                <div class="right aligned column">
+                    共
+                    <h3 class="ui orange header m-inline-block" th:text="${#arrays.length(tags)}">14</h3>
+                    个
+                </div>
+            </div>
+        </div>
+        <div class="ui orange segment">
+            <a href="#" th:href="@{/label/{id}(id=${tag.id})}"
+               class="ui basic button label m-margin-small m-margin-small2"
+               th:each="tag : ${tags}" th:classappend="${tag.id == active} ? 'orange' : ''"><i
+                    class="tags icon"></i>
+                <span th:text="${tag.name}">test</span>
+                <div class="detail" th:text="${#arrays.length(tag.blogs)}">10</div>
+            </a>
+            <!--/*-->
+            <a href="#" target="_blank" class="ui basic label m-margin-small m-margin-small2 m-opacity-80"><i
+                    class="tags icon"></i>test
+                <div class="detail">10</div>
+            </a>
+            <!--*/-->
+        </div>
+    </div>
+
+    <div class="ui segments">
+        <div class="ui segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui orange header">博客</h3>
+                </div>
+                <div class="right aligned column">
+                    共
+                    <h3 class="ui orange header m-inline-block" th:text="${page.totalElements}">14</h3>
+                    篇
+                </div>
+            </div>
+        </div>
+
+        <!--blog list-->
+        <div class="ui orange segment">
+            <div class="ui padded vertical segment" th:each="blog : ${page.content}">
+                <div class="ui mobile reversed stackable grid">
+                    <div class="eleven wide column m-padding-medium">
+                        <h3 class="ui header"><a href="#" class="m-black" target="_blank"
+                                                 th:href="@{/blog/{id}(id=${blog.id})}"
+                                                 th:text="${blog.title}">title</a></h3>
+                        <p class="m-text-thin" style="height:85px; overflow: hidden;"
+                           th:text="${blog.description}">
+                            test test test test test test test test test test test test test test test test test
+                            test test test test test test test test test test test test test test test test test
+                            test test test test test test test test test test test test test test test test test
+                            test test test test test
+                        </p>
+                        <div class="ui stackable grid">
+                            <div class="left aligned bottom attached eight wide column">
+                                <div class="ui horizontal link list">
+                                    <div class="item"><span><i class="calendar icon"></i></span><span
+                                            th:text="${#dates.format(blog.publishTime, 'HH:mm, dd/MM/yyyy')}">2000-01-01</span>
+                                    </div>
+                                    <div class="item"><span><i class="eye icon"></i><span
+                                            th:text="${blog.viewCount}">999</span></div>
+                                </div>
+                            </div>
+                            <div class="right aligned bottom attached eight wide column">
+                                <!--<a th:each="tag : ${blog.tags}" class="item" th:text="${tag.name}"></a>-->
+                                <a href="#" target="_blank" class="ui orange basic label"
+                                   th:each="tag : ${blog.tags}"><i class="tags icon"></i><span
+                                        th:text="${tag.name}">标签</span>
+                                </a>
+                                <a href="#" target="_blank" class="ui orange label"><i
+                                        class="folder icon"></i><span th:text="${blog.type.name}">分类</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
+                            <img src="../static/images/img_3.png" th:src="@{/images/img_3.png}" alt=""
+                                 class="ui rounded image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--pages-->
+        <div class="ui bottom attached segment" style="height:65px; display: flex; position: relative">
+            <div class="center-item m-opacity-80" th:if="${page.last}">所有博客</div>
+            <a th:href="@{/(page=${page.number}-1)}" class="ui orange basic button" style="margin-right: auto"
+               th:unless="${page.first}">上一页</a>
+            <div class="center-item" th:if="${page.totalPages}>1">
+                <a th:each="pageNumber :${#numbers.sequence(1, pageTotal)}" th:text="${pageNumber}"
+                   th:href="@{/(page=${pageNumber}-1)}" class="m-black m-margin-small2">1</a>
+            </div>
+            <a th:href="@{/(page=${page.number}+1)}" class="ui orange basic button" style="margin-left: auto"
+               th:unless="${page.last}">下一页</a>
+        </div>
+    </div>
+
+</div>
+
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padding-huge">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="item">
+                    <img src="../static/images/240px-TestImage.jpg" class="rounded image" alt=""
+                         style="width: 110px">
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <p class="m-padding-medium m-opacity-70 m-text-spaced m-text-thin m-text-lined">
+                    test test test test test test test test test test test test test test
+                    test test test test test test test test test test test test test test
+                    test test test test test test test
+                </p>
+            </div>
+        </div>
+
+        <div class="ui inverted section divider"></div>
+        <p class="m-padding-medium m-text-spaced m-text-thin m-opacity-70">
+            test test test test test test test test test test test test test test
+        </p>
+    </div>
+</footer>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+</body>
+</html>

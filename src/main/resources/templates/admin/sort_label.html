@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manage types and labels</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+
+
+<!--navigation-->
+<nav th:replace="admin/_fragments :: menu(3)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item m-mobile-hide"><i class="edit icon"></i>新建博客</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="clone icon"></i>博客管理</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="setting icon"></i>分类与标签管理</a>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--content-->
+<div class="c3 m-padding-big">
+    <div class="ui container">
+        <table class="ui compact orange table">
+            <thead>
+            <tr>
+                <th class="thirteen wide">
+                    <i class="folder icon"></i>分类
+                </th>
+                <th class="three wide"></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="type : ${sorts}">
+                <td th:text="${type.name}">test</td>
+                <td colspan="3">
+                    <a href="#" th:href="@{/admin/sort_label/{id}/edit_type(id=${type.id})}"
+                       class="ui orange basic button">编辑</a>
+                    <a href="#" th:href="@{/admin/sort_label/{id}/delete_type(id=${type.id})}"
+                       class="ui red button">删除</a>
+                </td>
+            </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+                <th colspan="6">
+                    <a href="#" th:href="@{/admin/sort_label/input_type}" class="ui orange basic button">新增</a>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+
+    </div>
+    <br>
+    <br>
+    <div class="ui container">
+        <table class="ui compact orange table">
+            <thead>
+            <tr>
+                <th class="thirteen wide">
+                    <i class="tags icon"></i>标签
+                </th>
+                <th class="three wide"></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="tag : ${page.content}">
+                <td th:text="${tag.name}">test</td>
+                <td colspan="3">
+                    <a href="#" th:href="@{/admin/sort_label/{id}/edit_tag(id=${tag.id})}"
+                       class="ui orange basic button">编辑</a>
+                    <a href="#" th:href="@{/admin/sort_label/{id}/delete_tag(id=${tag.id})}"
+                       class="ui red button">删除</a>
+                </td>
+            </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+                <th colspan="6">
+                    <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                        <a th:href="@{/admin/sort_label(page=${page.number}-1)}" class="item"
+                           th:unless="${page.first}">上一页</a>
+                        <a th:href="@{/admin/sort_label(page=${page.number}+1)}" class="item"
+                           th:unless="${page.last}">下一页</a>
+                    </div>
+                    <a href="#" th:href="@{/admin/sort_label/input_tag}" class="ui orange basic button">新增</a>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--/*/<th:block th:replace="admin/_fragments  :: script">/*/-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+</body>
+</html>

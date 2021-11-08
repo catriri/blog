@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" href="../../static/lib/markdown_editor/css/editormd.css" />
+</head>
+<body>
+
+<!--navigation-->
+<nav th:replace="admin/_fragments :: menu(0)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item"><i class="edit icon"></i>新建博客</a>
+            <a href="#" class="item m-item"><i class="clone icon"></i>博客管理</a>
+            <a href="#" class="item m-item"><i class="setting icon"></i>分类与标签管理</a>
+            <div class="right item m-item">
+                <div class="ui icon input">
+                    <label>
+                        <input type="text" placeholder="Search...">
+                    </label>
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--content-->
+<div class="c2 m-padding-big">
+    <div class="ui segment m-padding-medium">
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align:center">Backend management system</h2>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+<!--/*/<th:block th:replace="admin/_fragments  :: script">/*/-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../../static/lib/markdown_editor/css/editormd.css" th:href="@{/lib/markdown_editor/css/editormd.css}"/>
+</head>
+
+<body>
+<!--navigation-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" th:href="@{/admin/blogs/add}" class="item" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>编辑博客</a>
+            <a href="#" th:href="@{/admin/blogs}" class="item" th:classappend="${n==2} ? 'active'"><i class="folder icon"></i>博客管理</a>
+            <a href="#" th:href="@{/admin/sort_label}" class="item" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>分类与标签管理</a>
+            <div class="right item">
+                <div>登录用户：</div>
+                <div class="item" th:text="${session.user.nickname}"></div>
+                <i id="logoutIcon" class="ui dropdown icon link"></i>
+                <div class="ui logoutPop flowing popup transition hidden">
+                    <a href="#" th:href="@{/admin/logout}" class="item" style="color: #1A1A17 !important;">注销</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<th:block th:fragment="script">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('#logoutIcon').popup({
+            popup: $('.logoutPop.popup'),
+            on: 'click',
+            position: 'bottom right'
+        });
+    </script>
+</th:block>
+
+</body>
+</html>

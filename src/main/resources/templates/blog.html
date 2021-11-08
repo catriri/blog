@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog content</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+</head>
+
+<body>
+<!--navigation-->
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="folder icon"></i>分类</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--content-->
+<div class="c3 m-padding-big">
+    <div class="ui container">
+        <!--info-->
+        <div class="ui top attached segment">
+            <div class="ui horizontal link list">
+                <div class="item"><span><i class="calendar icon"></i></span><span
+                        th:text="${#dates.format(blog.publishTime, 'HH:mm, dd/MM/yyyy')}">2000-01-01</span>
+                </div>
+                <div class="item"><span><i class="eye icon"></i><span
+                        th:text="${blog.viewCount}">999</span></div>
+            </div>
+        </div>
+        <!--content-->
+        <div id="waypoint" class="ui attached m-padding-medium segment">
+            <!--\<img class="ui fluid image" src="../static/images/img.png" th:src="@{/images/img.png}" alt="">-->
+            <div class="ui right aligned basic segment">
+                <a href="#" target="_blank" class="ui orange basic label"
+                   th:each="tag : ${blog.tags}"><i class="tags icon"></i><span
+                        th:text="${tag.name}">标签</span>
+                </a>
+                <a href="#" target="_blank" class="ui orange label"><i
+                        class="folder icon"></i><span th:text="${blog.type.name}">分类</span></a>
+            </div>
+            <h2 class="ui center aligned header" th:text="${blog.title}">标题标题标题</h2>
+            <div id="content" class="js-toc-content typo typo-selection m-padding-medium2 m-padding-huge2"
+                 th:utext="${blog.content}">
+                <pre><code class="language-css">p { color: red}</code></pre>
+                <h1 id="section1">标题一</h1>
+                <p>既然如何， 我们不得不面对一个非常尴尬的事实，那就是， 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 总结的来说，
+                    中午吃什么，到底应该如何实现。 要想清楚，中午吃什么，到底是一种怎么样的存在。 在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么，发生了会如何，不发生又会如何。
+                    老子曾经说过，知人者智，自知者明。胜人者有力，自胜者强。带着这句话，我们还要更加慎重的审视这个问题： 从这个角度来看， 从这个角度来看， 每个人都不得不面对这些问题。 在面对这种问题时，
+                    每个人都不得不面对这些问题。 在面对这种问题时， 我认为， 我们都知道，只要有意义，那么就必须慎重考虑。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 经过上述讨论，
+                    在这种困难的抉择下，本人思来想去，寝食难安。 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 既然如何，
+                    可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 一般来讲，我们都必须务必慎重的考虑考虑。 现在，解决中午吃什么的问题，是非常非常重要的。 所以，
+                    我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 我们都知道，只要有意义，那么就必须慎重考虑。 那么， 在这种困难的抉择下，本人思来想去，寝食难安。
+                    我们都知道，只要有意义，那么就必须慎重考虑。
+                    中午吃什么，发生了会如何，不发生又会如何。 我们都知道，只要有意义，那么就必须慎重考虑。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。
+                    中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。 在这种困难的抉择下，本人思来想去，寝食难安。 莎士比亚曾经说过，本来无望的事，大胆尝试，往往能成功。这不禁令我深思。
+                    了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。
+                    中午吃什么，发生了会如何，不发生又会如何。 一般来说， 西班牙曾经提到过，自己的鞋子，自己知道紧在哪里。我希望诸位也能好好地体会这句话。 总结的来说， 从这个角度来看，
+                    我们都知道，只要有意义，那么就必须慎重考虑。 所谓中午吃什么，关键是中午吃什么需要如何写。 中午吃什么，发生了会如何，不发生又会如何。
+                    了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。
+                    老子在不经意间这样说过，知人者智，自知者明。胜人者有力，自胜者强。我希望诸位也能好好地体会这句话。 既然如何， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。
+                    每个人都不得不面对这些问题。
+                    在面对这种问题时， 就我个人来说，中午吃什么对我的意义，不能不说非常重大。 </p>
+                <h1 id="section2">标题二</h1>
+                <p>现在，解决中午吃什么的问题，是非常非常重要的。 所以， 德国在不经意间这样说过，只有在人群中间，才能认识自己。我希望诸位也能好好地体会这句话。
+                    奥斯特洛夫斯基在不经意间这样说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　这不禁令我深思。 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。
+                    而这些并不是完全重要，更加重要的问题是， 我们不得不面对一个非常尴尬的事实，那就是， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。
+                    莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。我希望诸位也能好好地体会这句话。 黑塞曾经提到过，有勇气承担命运这才是英雄好汉。带着这句话，我们还要更加慎重的审视这个问题：
+                    爱迪生在不经意间这样说过，失败也是我需要的，它和成功对我一样有价值。这句话语虽然很短，但令我浮想联翩。 既然如何， 德谟克利特曾经提到过，节制使快乐增加并使享受加强。这启发了我，
+                    问题的关键究竟为何？
+                    西班牙说过一句富有哲理的话，自知之明是最难得的知识。我希望诸位也能好好地体会这句话。 每个人都不得不面对这些问题。 在面对这种问题时， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。
+                    池田大作曾经说过，不要回避苦恼和困难，挺起身来向它挑战，进而克服它。这启发了我， 每个人都不得不面对这些问题。 在面对这种问题时， 现在，解决中午吃什么的问题，是非常非常重要的。 所以，
+                    生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 总结的来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 就我个人来说，中午吃什么对我的意义，不能不说非常重大。
+                    带着这些问题，我们来审视一下中午吃什么。 问题的关键究竟为何？ 要想清楚，中午吃什么，到底是一种怎么样的存在。 经过上述讨论， 就我个人来说，中午吃什么对我的意义，不能不说非常重大。
+                    在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么因何而发生？ 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。
+                    我们都知道，只要有意义，那么就必须慎重考虑。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 总结的来说， 现在，解决中午吃什么的问题，是非常非常重要的。 所以，
+                    中午吃什么，到底应该如何实现。
+                    可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 在这种困难的抉择下，本人思来想去，寝食难安。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 那么，
+                    中午吃什么，发生了会如何，不发生又会如何。 在这种困难的抉择下，本人思来想去，寝食难安。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。
+                    本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。
+                    带着这些问题，我们来审视一下中午吃什么。 裴斯泰洛齐曾经说过，今天应做的事没有做，明天再早也是耽误了。这启发了我， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 </p>
+                <h2 id="section3">小标题</h2>
+                <table class="ui table" summary="Typo.css 的测试平台列表">
+                    <thead>
+                    <tr>
+                        <th>OS/浏览器</th>
+                        <th>Firefox</th>
+                        <th>Chrome</th>
+                        <th>Safari</th>
+                        <th>Opera</th>
+                        <th>IE9</th>
+                        <th>IE8</th>
+                        <th>IE7</th>
+                        <th>IE6</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>OS X</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Win 7</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Win XP</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Ubuntu</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>✔</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="ui center aligned basic segment">
+                <button id="payButton" class="ui orange basic circular button">打赏</button>
+            </div>
+            <div class="ui payQr flowing popup transition hidden">
+                <div class="ui orange basic label">
+                    <div class="ui image" style="font-size: inherit !important">
+                        <img src="../static/images/240px-TestImage.jpg" th:src="@{/images/240px-TestImage.jpg}" alt=""
+                             class="ui rounded bordered image"
+                             style="width:150px; height:150px">
+                    </div>
+                </div>
+                <div style="margin-top: 0.5em; margin-bottom: -0.2em">支付宝</div>
+            </div>
+        </div>
+        <div class="ui attached positive message">
+            <ui class="list">
+                <li>Posted by zkant</li>
+                <li>Publish time: <span th:text="${#dates.format(blog.publishTime, 'HH:mm, dd/MM/yyyy')}"></span></li>
+                <li>contact author: catriri9@gmail.com</li>
+            </ui>
+        </div>
+        <!--comment-->
+        <div class="ui bottom attached segment">
+            <div class="ui orange segment" id="comment-container">
+                <div th:fragment="commentList">
+                    <div class="ui threaded comments" style="max-width: 100% !important;">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment" th:each="comment : ${comments}">
+                            <a class="avatar">
+                                <img src="../static/images/878685_user_512x512.png" style="width:45px; height:45px"
+                                     th:src="@{/images/878685_user_512x512.png}" th:if="${!comment.adminComment}">
+                                <img src="../static/images/img_2.png" style="width:45px; height:45px"
+                                     th:src="@{/images/img_2.png}" th:if="${comment.adminComment}">
+                            </a>
+                            <div class="content">
+                                <div class="author">
+                                    <span th:text="${comment.nickname}">Matt</span>
+                                    <div class="ui mini basic orange left label m-padding-mini"
+                                         th:if="${comment.adminComment}">博主
+                                    </div>
+                                </div>
+                                <div class="metadata">
+                                    <span class="date"
+                                          th:text="${{#dates.format(comment.publishTime, 'HH:mm, dd/MM/yyyy')}}">今天下午 5:42</span>
+                                </div>
+                                <div class="text" th:text="${comment.content}">太赞了！</div>
+                                <div class="actions">
+                                    <a class="reply" data-commentid="1" data-commentnickname="Matt"
+                                       th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}"
+                                       onclick="reply(this)">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comments" th:if="${#arrays.length(comment.sonComments)}>0">
+                                <div class="comment" th:each="son : ${comment.sonComments}">
+                                    <a class="avatar">
+                                        <img src="../static/images/878685_user_512x512.png" style="width:40px; height:40px"
+                                             th:src="@{/images/878685_user_512x512.png}" th:if="${!son.adminComment}">
+                                        <img src="../static/images/img_2.png" style="width:40px; height:40px"
+                                             th:src="@{/images/img_2.png}" th:if="${son.adminComment}">
+                                    </a>
+                                    <div class="content">
+                                        <div class="author">
+                                            <span th:text="${son.nickname}">Matt</span>
+                                            <div class="ui mini basic orange left label m-padding-mini"
+                                                 th:if="${son.adminComment}">博主
+                                            </div>&nbsp;
+                                            <span th:text="|@ ${son.parentComment.nickname}|"
+                                                  style="color: rgba(250,137,26,0.9)"> @ Matt</span>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="date"
+                                                  th:text="${{#dates.format(son.publishTime, 'HH:mm, dd/MM/yyyy')}}">今天下午 8:50</span>
+                                        </div>
+                                        <div class="text" th:text="${son.content}">你是对的！</div>
+                                        <div class="actions">
+                                            <a class="reply" data-commentid="2" data-commentnickname="Jenny"
+                                               th:attr="data-commentid=${son.id}, data-commentnickname=${son.nickname}"
+                                               onclick="reply(this)">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/*-->
+                        <div class="comment">
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">昨天上午12:30</span>
+                                </div>
+                                <div class="text">
+                                    <p>這對我的研究是非常有用.謝謝!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">刚刚</span>
+                                        </div>
+                                        <div class="text">艾略特你永远是多么正确 :)</div>
+                                        <div class="actions">
+                                            <a class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 天以前</span>
+                                </div>
+                                <div class="text">老兄，这太棒了。非常感谢。</div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--*/-->
+                    </div>
+                </div>
+            </div>
+            <form class="ui reply form" id="comment-form">
+                <input type="hidden" name="blog.id" th:value="${blog.id}">
+                <input type="hidden" name="parent.id" value="-1">
+                <div class="field m-margin-1em-tb">
+                    <label>
+                        <textarea name="content" placeholder="leave a comment here"></textarea>
+                    </label>
+                </div>
+                <div class="field m-mobile-wide" style="width: 200px">
+                    <label>
+                        <input type="text" name="nickname" placeholder="Your nickname"
+                               th:value="${session.user} != null ? 'zkt':null">
+                    </label>
+                </div>
+                <div class="m-mobile-wide">
+                    <button type="button" id="comment-btn" class="ui orange labeled submit icon button">
+                        <i class="icon edit"></i> Add Reply
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="toolbar" class="m-padding m-fixed m-right-bottom m-mobile-hide" style="display: none">
+    <div class="ui vertical icon buttons ">
+        <button type="button" class="ui toc orange button">目录</button>
+        <a href="#comment-container" class="ui orange button">评论</a>
+        <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+        <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+    </div>
+</div>
+
+<div class="ui toc-container flowing popup transition hidden" style="width: 250px!important;">
+    <ol class="js-toc">
+
+    </ol>
+</div>
+
+<div id="qrcode" class="ui wechat-qr flowing popup transition hidden " style="width: 130px !important;">
+    <!--    <img src="../static/images/240px-TestImage.jpg" th:src="@{images/240px-TestImage.jpg}" alt=""-->
+    <!--         class="ui rounded image" style="width: 120px !important;">-->
+</div>
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padding-huge">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="item">
+                    <img src="../static/images/240px-TestImage.jpg" class="rounded image" alt=""
+                         style="width: 110px">
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <p class="m-padding-medium m-opacity-70 m-text-spaced m-text-thin m-text-lined">
+                    test test test test test test test test test test test test test test
+                    test test test test test test test test test test test test test test
+                    test test test test test test test
+                </p>
+            </div>
+        </div>
+
+        <div class="ui inverted section divider"></div>
+        <p class="m-padding-medium m-text-spaced m-text-thin m-opacity-70">
+            test test test test test test test test test test test test test test
+        </p>
+    </div>
+</footer>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="../static/lib/prism/prism.js"></script>
+<!--/*/</th:block>/*/-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+<script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+<script src="../static/lib/waypoints/jquery.waypoints.min.js"
+        th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+<script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+
+<script th:inline="javascript">
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('#payButton').popup({
+        popup: $('.payQr.popup'),
+        on: 'click',
+        position: 'bottom center'
+    });
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function (direction) {
+            if (direction === 'down') {
+                $('#toolbar').show(100);
+            } else {
+                $('#toolbar').hide(500);
+            }
+            console.log('Scrolled to waypoint!  ' + direction);
+        }
+    })
+
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+
+    $('.toc.button').popup({
+        popup: $('.toc-container.popup'),
+        on: 'click',
+        position: 'top center'
+    });
+
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'left center'
+    });
+
+    var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
+    var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
+    var qrcode = new QRCode("qrcode", {
+        text: serurl + url,
+        width: 110,
+        height: 110,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    $('#toTop-button').click(
+        function () {
+            $(window).scrollTo(0, 500);
+        }
+    );
+
+    //评论表单验证
+    $('.ui.form').form({
+        fields: {
+            title: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入评论内容'
+                }
+                ]
+            },
+            content: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入你的昵称'
+                }]
+            }
+        }
+    });
+
+    $(function () {
+        $("#comment-container").load(
+            /*[[@{/comments/{id}(id=${blog.id})}]]*/
+        );
+    });
+
+    $('#comment-btn').click(function () {
+        var boo = $('.ui.form').form('validate form');
+        if (boo) {
+            postComment();
+        }
+    });
+
+    function postComment() {
+        $("#comment-container").load(/*[[@{/comments}]]*/"", {
+            "parentComment.id": $("[name='parent.id']").val(),
+            "blog.id": $("[name='blog.id']").val(),
+            "nickname": $("[name='nickname']").val(),
+            "content": $("[name='content']").val()
+        }, function (responseTxt, statusTxt, xhr) {
+            $(window).scrollTo($('#comment-container'), 500);
+            clearComment();
+        });
+    }
+
+    function clearComment() {
+        $("[name='nickname']").val('');
+        $("[name='content']").val('');
+        $("[name='parent.id']").val(-1);
+        $("[name='content']").attr("placeholder", "leave a comment here");
+    }
+
+    function reply(obj) {
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder", "@" + commentNickname).focus();
+        $("[name='parent.id']").val(commentId);
+        $(window).scrollTo($('#comment-form'), 500);
+    }
+
+</script>
+</body>
+</html>

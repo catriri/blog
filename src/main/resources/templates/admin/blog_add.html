@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" href="../../static/lib/markdown_editor/css/editormd.css"/>
+</head>
+<body>
+
+<!--navigation-->
+<nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item"><i class="edit icon"></i>新建博客</a>
+            <a href="#" class="item m-item"><i class="clone icon"></i>博客管理</a>
+            <a href="#" class="item m-item"><i class="setting icon"></i>分类与标签管理</a>
+            <div class="right item m-item">
+                <div class="ui icon input">
+                    <label>
+                        <input type="text" placeholder="Search...">
+                    </label>
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--content-->
+<div class="c1 m-padding-big">
+    <div class="ui segment m-padding-medium">
+        <form id="blog-form" class="ui form" th:object="${blog}" th:action="@{/admin/blogs}" method="post">
+            <input type="hidden" name="published">
+            <input type="hidden" name="id" th:value="*{id}">
+            <!--title-->
+            <div class="required field">
+                <div class="ui fluid icon input">
+                    <input type="text" name="title" placeholder="Title" th:value="*{title}">
+                </div>
+            </div>
+            <!--description-->
+            <div class="required field">
+                <textarea rows="3" name="description" placeholder="Description"
+                          th:text="*{description} != null ? *{description} : '这里应该是一段文字内容，页面上设计了是写个文章内容的描述，但是作者太懒了所以没有写，看标题知道是什么差不多得了。内容描述旁边是博客的图片，如果是猫猫头那就是还没有加图片。'"></textarea>
+            </div>
+            <!--content-->
+            <div class="required field">
+                <div id="my-editormd">
+                    <textarea id="my-editormd-markdown-doc" name="content" placeholder="博客内容..." th:text="*{content}"
+                              maxlength="300"></textarea>
+                </div>
+            </div>
+
+            <div class="ui mobile stackable two column grid">
+                <!--add sort-->
+                <div class="left aligned six wide column">
+                    <div class="required field">
+                        <div class="ui fluid selection dropdown">
+                            <i class="folder icon"></i>
+                            <input type="hidden" name="type.id" th:value="*{type} != null ? *{type.id}">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">选择分类</div>
+                            <div class="menu">
+                                <!-- type.id 会将id值赋给blog的type对象-->
+                                <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
+                                     th:text="${type.name}">Sort
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--add label-->
+                <div class="right aligned ten wide column">
+                    <div class="ui two column grid">
+                        <div class="left aligned twelve wide column">
+                            <div class="ui fluid labeled icon selection multiple search dropdown" style="float: left">
+                                <i class="tags icon" style="margin: 0.5em"></i>
+                                <input name="tagIds" type="hidden" th:value="*{tagIds}">
+                                <i class="dropdown icon"></i>
+                                <div class="default text" style="margin-left: 3em !important;">选择标签</div>
+                                <div class="menu">
+                                    <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}"
+                                         th:text="${tag.name}">Label
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right aligned four wide column">
+
+                            <div class="ui fluid button clrButton" style="float: right">
+                                clear
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--add picture-->
+            <!--            <div class="ui fluid inverted left icon input" style="margin-top: 1em">-->
+            <!--                <input type="text" placeholder="picture address">-->
+            <!--                <i class="file image icon"></i>-->
+            <!--            </div>-->
+
+            <div class="ui error message"></div>
+
+            <div class="ui right aligned container m-margin-medium">
+                <button type="button" class="ui labeled icon button" onclick="window.history.go(-1)"><i
+                        class="trash icon"></i>取消
+                </button>
+                <button type="button" id="save-btn" class="ui secondary labeled icon button m-margin-small2"><i
+                        class="save icon"></i>保存为草稿
+                </button>
+                <button type="button" id="publish-btn" class="ui orange labeled icon button"><i
+                        class="upload icon "></i>发布文章
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--/*/<th:block th:replace="admin/_fragments  :: script">/*/-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<!--markdown editor-->
+<script src="../../static/lib/markdown_editor/editormd.min.js"
+        th:src="@{/lib/markdown_editor/editormd.min.js}"></script>
+<script>
+    var contentEditor;
+
+    $(function () {
+        contentEditor = editormd("my-editormd", {
+            width: "100%",
+            height: 720,
+            syncScrolling: "single",
+            // path: "../../static/lib/markdown_editor/lib/"
+            path: "/lib/markdown_editor/lib/"
+        });
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+
+    $('#save-btn').click(function () {     //点击保存，修改发布状态为false
+        $('[name="published"]').val(false);
+        $('#blog-form').submit();
+    });
+
+
+    $('#publish-btn').click(function () {   //点击发布，修改发布状态为true
+        $('[name="published"]').val(true);
+        $('#blog-form').submit();
+    });
+
+    $('.ui.form').form({    //表单元素非空验证
+        fields: {
+            title: {
+                identifier: 'title',
+                rules: [{
+                    type: 'empty',
+                    prompt: '标题：请输入博客标题'
+                }]
+            },
+            content: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: '标题：请输入博客内容'
+                }]
+            },
+            typeId: {
+                identifier: 'type.id',
+                rules: [{
+                    type: 'empty',
+                    prompt: '标题：请输入博客分类'
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,727 @@
+2021-10-27 00:01:08.802  INFO 19580 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:01:08.813  INFO 19580 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-10-27 00:01:08.827  INFO 19580 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-10-27 00:01:09.458  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:01:09.459  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:01:09.887  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:01:09.888  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:01:10.156  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:01:10.156  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:01:10.157  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:01:10.186  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:01:10.186  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 717 ms
+2021-10-27 00:01:10.242  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:01:10.250  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-10-27 00:01:10.308  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-10-27 00:01:10.309  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:01:10.329  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:01:10.330  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:01:10.351  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:01:10.497  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:01:10.591  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:01:10.614  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:01:10.620  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.316 seconds (JVM running for 16556.903)
+2021-10-27 00:01:10.621  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:01:12.565  INFO 19580 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:01:12.565  INFO 19580 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-10-27 00:01:12.569  INFO 19580 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-10-27 00:01:12.799  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:01:12.799  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:01:12.995  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:01:13.027  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:01:13.186  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:01:13.187  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:01:13.187  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:01:13.202  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:01:13.202  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2021-10-27 00:01:13.277  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:01:13.281  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-10-27 00:01:13.303  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-10-27 00:01:13.303  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:01:13.365  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:01:13.366  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:01:13.948  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:01:14.279  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:01:14.598  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:01:14.630  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:01:14.636  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.89 seconds (JVM running for 16560.918)
+2021-10-27 00:01:14.637  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:01:14.640  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:01:14.643  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:01:14.644  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-27 00:01:14.650  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@643b093d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@643b093d]}
+2021-10-27 00:01:14.676  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:01:14.682  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:01:14.688  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:01:21.463  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@277ed399, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@277ed399]}
+2021-10-27 00:01:21.469  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:01:23.299  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@a45365a, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@a45365a]}
+2021-10-27 00:01:23.308  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:40.538  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@140c9f27, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@140c9f27]}
+2021-10-27 00:02:40.549  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:43.966  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@10aaa2cc, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@10aaa2cc]}
+2021-10-27 00:02:43.974  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:46.117  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 2, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2ee9471, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2ee9471]}
+2021-10-27 00:02:46.124  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:47.539  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@1bc9b20b, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@1bc9b20b]}
+2021-10-27 00:02:47.547  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:48.922  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@4fbe9bcf, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@4fbe9bcf]}
+2021-10-27 00:02:48.930  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:02:50.503  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@4700617e, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@4700617e]}
+2021-10-27 00:02:50.514  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:03:11.633  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@3bfb7094, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@3bfb7094]}
+2021-10-27 00:03:11.640  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:03:12.807  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@688b78d9, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@688b78d9]}
+2021-10-27 00:03:12.819  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:03:14.261  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2454f67d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2454f67d]}
+2021-10-27 00:03:14.268  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:03:15.717  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@1210e6a0, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@1210e6a0]}
+2021-10-27 00:03:15.730  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:10:50.126  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@40885493, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@40885493]}
+2021-10-27 00:10:50.134  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:10:51.810  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@251954a9, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@251954a9]}
+2021-10-27 00:10:51.818  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:10:54.302  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6385974c, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6385974c]}
+2021-10-27 00:10:54.313  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:10:55.518  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@52ac3a86, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@52ac3a86]}
+2021-10-27 00:10:55.529  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:10:58.533  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6e3e674d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6e3e674d]}
+2021-10-27 00:10:58.542  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:11:00.557  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2fc26305, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2fc26305]}
+2021-10-27 00:11:00.568  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:11:02.298  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@3a08680f, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@3a08680f]}
+2021-10-27 00:11:02.307  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:35.697  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@7138f21a, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@7138f21a]}
+2021-10-27 00:13:35.711  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:37.857  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@249ba862, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@249ba862]}
+2021-10-27 00:13:37.864  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:40.970  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@46d56b92, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@46d56b92]}
+2021-10-27 00:13:40.980  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:42.051  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@11d2d2c, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@11d2d2c]}
+2021-10-27 00:13:42.058  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:44.735  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5c74f4f2, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5c74f4f2]}
+2021-10-27 00:13:44.748  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:46.550  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@7a600f1c, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@7a600f1c]}
+2021-10-27 00:13:46.556  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:48.629  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@1b283a3b, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@1b283a3b]}
+2021-10-27 00:13:48.636  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:13:50.327  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@23137455, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@23137455]}
+2021-10-27 00:13:50.336  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:14:30.509  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@53d6adc0, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@53d6adc0]}
+2021-10-27 00:14:30.518  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:14:42.875  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2899718f, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2899718f]}
+2021-10-27 00:14:42.880  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:14:44.322  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@559a1144, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@559a1144]}
+2021-10-27 00:14:44.327  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:14:46.406  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@54d8b282, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@54d8b282]}
+2021-10-27 00:14:46.418  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:14:48.067  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@4c92f789, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@4c92f789]}
+2021-10-27 00:14:48.074  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:18.819  INFO 19580 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:19:18.820  INFO 19580 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2021-10-27 00:19:18.825  INFO 19580 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2021-10-27 00:19:19.002  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:19:19.002  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : No active profile set, falling back to default profiles: default
+2021-10-27 00:19:19.127  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:19:19.127  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:19:19.229  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:19:19.229  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:19:19.230  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:19:19.244  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:19:19.245  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2021-10-27 00:19:19.253  WARN 19580 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-27 00:19:19.253  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-10-27 00:19:19.257  INFO 19580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-27 00:19:19.260 ERROR 19580 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-27 00:19:24.416  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:19:24.417  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:19:24.575  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:19:24.575  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:19:24.680  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:19:24.681  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:19:24.681  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:19:24.700  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:19:24.700  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2021-10-27 00:19:24.744  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:19:24.748  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2021-10-27 00:19:24.779  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2021-10-27 00:19:24.779  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:19:24.803  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:19:24.803  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:19:24.819  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:19:24.883  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:19:24.916  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:19:24.929  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:19:24.933  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 0.575 seconds (JVM running for 17651.216)
+2021-10-27 00:19:24.935  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:19:25.143  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:19:25.143  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:19:25.145  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-10-27 00:19:25.214 ERROR 19580 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "page.totalElements" (template: "index" - line 24, col 69)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.totalElements" (template: "index" - line 24, col 69)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'totalElements' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 69 common frames omitted
+
+2021-10-27 00:19:25.215 ERROR 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'totalElements' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-10-27 00:19:29.007  INFO 19580 --- [Thread-52] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:19:29.007  INFO 19580 --- [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-10-27 00:19:29.021  INFO 19580 --- [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-10-27 00:19:29.342  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:19:29.342  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:19:29.686  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:19:29.739  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:19:30.020  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:19:30.021  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:19:30.021  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:19:30.040  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:19:30.040  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2021-10-27 00:19:30.102  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:19:30.106  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-10-27 00:19:30.129  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-10-27 00:19:30.129  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:19:30.193  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:19:30.193  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:19:30.626  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:19:30.779  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:19:30.937  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:19:30.954  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:19:30.959  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.674 seconds (JVM running for 17657.242)
+2021-10-27 00:19:30.960  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:19:31.134  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:19:31.134  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:19:31.135  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-27 00:19:31.140  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5ce57521, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5ce57521]}
+2021-10-27 00:19:31.156  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:19:31.160  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:19:31.164  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:35.370  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@1efba231, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@1efba231]}
+2021-10-27 00:19:35.385  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:36.784  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5fe6cb28, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5fe6cb28]}
+2021-10-27 00:19:36.793  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:39.004  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6be87057, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6be87057]}
+2021-10-27 00:19:39.013  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:40.709  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5a0d6550, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5a0d6550]}
+2021-10-27 00:19:40.718  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:19:41.519  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@30621e5a, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@30621e5a]}
+2021-10-27 00:19:41.525  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:20:28.520  INFO 19580 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:20:28.522  INFO 19580 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2021-10-27 00:20:28.530  INFO 19580 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2021-10-27 00:20:28.917  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:20:28.917  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:20:29.073  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:20:29.073  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:20:29.179  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:20:29.180  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:20:29.180  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:20:29.196  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:20:29.196  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 277 ms
+2021-10-27 00:20:29.226  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:20:29.236  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2021-10-27 00:20:29.271  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2021-10-27 00:20:29.271  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:20:29.289  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:20:29.289  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:20:29.305  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:20:29.351  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:20:29.390  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:20:29.403  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:20:29.408  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 0.53 seconds (JVM running for 17715.691)
+2021-10-27 00:20:29.411  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:20:32.874  INFO 19580 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:20:32.875  INFO 19580 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-10-27 00:20:32.889  INFO 19580 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-10-27 00:20:33.220  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:20:33.221  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:20:33.638  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:20:33.696  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:20:33.975  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:20:33.982  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:20:33.982  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:20:34.019  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:20:34.020  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2021-10-27 00:20:34.157  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:20:34.167  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-10-27 00:20:34.229  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-10-27 00:20:34.230  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:20:34.335  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:20:34.335  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:20:34.787  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:20:34.937  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:20:35.090  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:20:35.099  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:20:35.102  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.959 seconds (JVM running for 17721.385)
+2021-10-27 00:20:35.103  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:20:35.276  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:20:35.278  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:20:35.279  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-27 00:20:35.290  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@1776b6b6, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@1776b6b6]}
+2021-10-27 00:20:35.313  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:20:35.317  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:20:35.320  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:20:37.569  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@18fd1efc, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@18fd1efc]}
+2021-10-27 00:20:37.584  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:20:38.896  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@516d6cf0, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@516d6cf0]}
+2021-10-27 00:20:38.906  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:20:40.687  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@486620f6, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@486620f6]}
+2021-10-27 00:20:40.695  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:20:41.789  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2f43b8f6, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2f43b8f6]}
+2021-10-27 00:20:41.796  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:22:20.609  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@38fd781f, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@38fd781f]}
+2021-10-27 00:22:20.618  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:22:55.004  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@45a31fc5, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@45a31fc5]}
+2021-10-27 00:22:55.012  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:22:57.206  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@47de91b8, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@47de91b8]}
+2021-10-27 00:22:57.215  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:22:58.619  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@29667aa2, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@29667aa2]}
+2021-10-27 00:22:58.626  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:23:00.531  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@11397e9, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@11397e9]}
+2021-10-27 00:23:00.539  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:23:01.691  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@46c92dd6, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@46c92dd6]}
+2021-10-27 00:23:01.698  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:30:36.710  INFO 19580 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:30:36.712  INFO 19580 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-10-27 00:30:36.726  INFO 19580 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-10-27 00:30:37.051  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:30:37.052  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : No active profile set, falling back to default profiles: default
+2021-10-27 00:30:37.261  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:30:37.262  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:30:37.486  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:30:37.487  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:30:37.487  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:30:37.515  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:30:37.515  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 462 ms
+2021-10-27 00:30:37.533  WARN 19580 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-27 00:30:37.534  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-10-27 00:30:37.542  INFO 19580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-27 00:30:37.547 ERROR 19580 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-27 00:30:39.430  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:30:39.430  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:30:39.580  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:30:39.581  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:30:39.665  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:30:39.665  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:30:39.666  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:30:39.687  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:30:39.687  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 256 ms
+2021-10-27 00:30:39.726  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:30:39.733  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2021-10-27 00:30:39.764  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2021-10-27 00:30:39.765  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:30:39.786  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:30:39.786  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:30:39.810  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:30:39.874  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:30:39.956  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:30:39.971  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:30:39.976  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 0.574 seconds (JVM running for 18326.258)
+2021-10-27 00:30:39.977  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:30:43.356  INFO 19580 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:30:43.358  INFO 19580 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2021-10-27 00:30:43.364  INFO 19580 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2021-10-27 00:30:43.499  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:30:43.500  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:30:43.670  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:30:43.700  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:30:43.850  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:30:43.851  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:30:43.851  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:30:43.868  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:30:43.868  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 366 ms
+2021-10-27 00:30:43.943  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:30:43.949  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2021-10-27 00:30:43.978  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2021-10-27 00:30:43.978  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:30:44.043  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:30:44.043  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:30:44.443  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:30:44.574  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:30:44.748  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:30:44.762  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:30:44.767  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.308 seconds (JVM running for 18331.05)
+2021-10-27 00:30:44.768  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:30:44.819  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:30:44.820  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:30:44.820  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-10-27 00:30:44.826  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@122c0c6d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@122c0c6d]}
+2021-10-27 00:30:44.839  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:30:44.844  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:30:44.848  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:30:47.027  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6082b6da, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6082b6da]}
+2021-10-27 00:30:47.035  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:17.716  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6f05008b, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6f05008b]}
+2021-10-27 00:32:17.728  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:19.027  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5eb70504, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5eb70504]}
+2021-10-27 00:32:19.033  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:20.426  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@ee0dec6, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@ee0dec6]}
+2021-10-27 00:32:20.440  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:21.952  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6e0e7b00, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6e0e7b00]}
+2021-10-27 00:32:21.961  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:23.276  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@63b2d28d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@63b2d28d]}
+2021-10-27 00:32:23.285  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:56.444  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5f86e045, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5f86e045]}
+2021-10-27 00:32:56.454  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:57.621  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6c085f92, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6c085f92]}
+2021-10-27 00:32:57.626  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:32:59.293  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@8bcf552, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@8bcf552]}
+2021-10-27 00:32:59.301  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:00.854  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@44527ffc, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@44527ffc]}
+2021-10-27 00:33:00.862  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:02.455  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6bf5a9ef, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6bf5a9ef]}
+2021-10-27 00:33:02.463  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:06.063  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@4956eb2e, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@4956eb2e]}
+2021-10-27 00:33:06.072  INFO 19580 --- [http-nio-8080-exec-8] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:07.491  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@45928716, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@45928716]}
+2021-10-27 00:33:07.500  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:08.939  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 1, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@19633600, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@19633600]}
+2021-10-27 00:33:08.946  INFO 19580 --- [http-nio-8080-exec-2] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:33:10.302  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 2, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@23dce385, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@23dce385]}
+2021-10-27 00:33:10.308  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:41:50.365  INFO 19580 --- [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:41:50.367  INFO 19580 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2021-10-27 00:41:50.380  INFO 19580 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2021-10-27 00:41:50.872  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:41:50.873  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:41:51.298  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:41:51.353  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:41:51.503  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:41:51.504  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:41:51.504  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:41:51.523  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:41:51.523  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2021-10-27 00:41:51.611  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:41:51.616  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2021-10-27 00:41:51.644  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2021-10-27 00:41:51.644  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:41:51.706  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:41:51.706  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:41:52.094  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:41:52.271  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:41:52.452  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:41:52.464  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:41:52.466  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 1.676 seconds (JVM running for 18998.749)
+2021-10-27 00:41:52.467  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:41:54.375  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:41:54.376  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:41:54.377  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-27 00:41:54.387  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@21f824f9, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@21f824f9]}
+2021-10-27 00:41:54.403  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:41:54.407  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:41:54.410  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:43:09.169  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@7bedcc1d, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@7bedcc1d]}
+2021-10-27 00:43:09.184  INFO 19580 --- [http-nio-8080-exec-10] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:46:32.727  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@7619e95e, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@7619e95e]}
+2021-10-27 00:46:32.735  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:48:12.743  INFO 19580 --- [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:48:12.744  INFO 19580 --- [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2021-10-27 00:48:12.749  INFO 19580 --- [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2021-10-27 00:48:12.992  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:48:12.993  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:48:13.246  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:48:13.247  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-10-27 00:48:13.378  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:48:13.378  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:48:13.378  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:48:13.398  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:48:13.398  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 402 ms
+2021-10-27 00:48:13.447  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:48:13.452  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2021-10-27 00:48:13.484  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2021-10-27 00:48:13.485  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:48:13.512  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:48:13.512  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:48:13.532  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:48:13.655  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:48:13.753  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:48:13.788  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:48:13.809  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 0.866 seconds (JVM running for 19380.092)
+2021-10-27 00:48:13.811  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:48:16.281  INFO 19580 --- [Thread-86] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:48:16.282  INFO 19580 --- [Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2021-10-27 00:48:16.290  INFO 19580 --- [Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2021-10-27 00:48:16.503  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:48:16.504  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:48:16.849  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:48:16.903  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:48:17.127  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:48:17.128  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:48:17.128  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:48:17.164  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:48:17.164  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2021-10-27 00:48:17.305  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:48:17.314  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2021-10-27 00:48:17.361  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2021-10-27 00:48:17.361  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:48:17.467  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:48:17.467  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:48:18.222  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:48:18.360  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:48:18.511  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:48:18.521  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:48:18.524  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 2.09 seconds (JVM running for 19384.807)
+2021-10-27 00:48:18.525  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:48:19.070  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:48:19.071  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:48:19.071  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-10-27 00:48:39.078  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@7ad149ed, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@7ad149ed]}
+2021-10-27 00:48:39.085  WARN 19580 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:48:39.088  WARN 19580 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:48:39.092  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:49:20.724  INFO 19580 --- [Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:49:20.725  INFO 19580 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2021-10-27 00:49:20.754  INFO 19580 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2021-10-27 00:49:21.304  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Starting BackblogApplication using Java 1.8.0_181 on DESKTOP-BTL5ADU with PID 19580 (C:\Users\catri\Desktop\backblog\target\classes started by catri in C:\Users\catri\Desktop\backblog)
+2021-10-27 00:49:21.304  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : The following profiles are active: dev
+2021-10-27 00:49:21.713  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-27 00:49:21.774  INFO 19580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2021-10-27 00:49:22.101  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-27 00:49:22.102  INFO 19580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 00:49:22.103  INFO 19580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-10-27 00:49:22.139  INFO 19580 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-10-27 00:49:22.139  INFO 19580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 829 ms
+2021-10-27 00:49:22.313  INFO 19580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-27 00:49:22.319  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2021-10-27 00:49:22.368  INFO 19580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2021-10-27 00:49:22.368  INFO 19580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-10-27 00:49:22.481  INFO 19580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-27 00:49:22.481  INFO 19580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 00:49:22.915  WARN 19580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 00:49:23.062  INFO 19580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-27 00:49:23.241  INFO 19580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-27 00:49:23.252  INFO 19580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-27 00:49:23.255  INFO 19580 --- [restartedMain] com.backblog.BackblogApplication         : Started BackblogApplication in 2.031 seconds (JVM running for 19449.538)
+2021-10-27 00:49:23.256  INFO 19580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-27 00:49:32.279  INFO 19580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 00:49:32.280  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 00:49:32.281  INFO 19580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-27 00:49:32.285  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@2cc574e5, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@2cc574e5]}
+2021-10-27 00:49:32.317  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:49:32.321  WARN 19580 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-10-27 00:49:32.326  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:49:33.669  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5285c797, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5285c797]}
+2021-10-27 00:49:33.675  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:49:48.599  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@66d74fae, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@66d74fae]}
+2021-10-27 00:49:48.609  INFO 19580 --- [http-nio-8080-exec-5] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:51:00.050  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@73016e9, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@73016e9]}
+2021-10-27 00:51:00.061  INFO 19580 --- [http-nio-8080-exec-9] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:51:01.035  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@710bc73b, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@710bc73b]}
+2021-10-27 00:51:01.044  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:51:11.511  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@5c59d901, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@5c59d901]}
+2021-10-27 00:51:11.523  INFO 19580 --- [http-nio-8080-exec-7] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 00:51:23.679  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@388b0a9e, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@388b0a9e]}
+2021-10-27 00:51:23.701  INFO 19580 --- [http-nio-8080-exec-1] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 01:00:12.993  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/blog', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.blog', args=[]}
+2021-10-27 01:00:12.993  INFO 19580 --- [http-nio-8080-exec-6] com.backblog.aspect.LogAspect            : Result : blog
+2021-10-27 01:00:23.404  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@32aeeea8, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@32aeeea8]}
+2021-10-27 01:00:23.413  INFO 19580 --- [http-nio-8080-exec-3] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 01:00:46.935  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.backblog.web.IndexController.index', args=[Page request [number: 0, size 15, sort: publishTime: DESC], {blogQuery=com.backblog.vo.BlogQuery@6b77ce88, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.backblog.vo.BlogQuery@6b77ce88]}
+2021-10-27 01:00:46.946  INFO 19580 --- [http-nio-8080-exec-4] com.backblog.aspect.LogAspect            : Result : index
+2021-10-27 03:19:27.894  WARN 19580 --- [HikariPool-17 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Thread starvation or clock leap detected (housekeeper delta=1h18m34s333ms293µs500ns).
+2021-10-27 03:19:37.431  INFO 19580 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 03:19:37.432  INFO 19580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2021-10-27 03:19:37.442  INFO 19580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.

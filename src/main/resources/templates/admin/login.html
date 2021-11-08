@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
+</head>
+<body>
+
+<!--navigation-->
+<nav class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<!--content-->
+<div class="c4 m-padding-big">
+    <div class="ui container" style="max-width: 30em !important;">
+        <div class="column">
+            <h2 class="ui black header">
+                <div class="content">
+                    Backend Login
+                </div>
+            </h2>
+            <form class="ui large form" method="post" th:action="@{/admin/login}">
+                <div class="ui segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="username" placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button class="ui fluid large orange submit button">Login</button>
+                </div>
+
+                <div class="ui error message"></div>
+                <div class="ui negative message" th:unless="${#strings.isEmpty(msg)}" th:text="${msg}">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--/*/<th:block th:replace="admin/_fragments  :: script">/*/-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/--><script>
+    $('.ui.form').form({
+        fields: {
+            username: {
+                identifier: 'username',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'Username cannot be empty'
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'Password name cannot be empty'
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
