@@ -43,7 +43,7 @@ public class TypeTagController {
     @GetMapping("/sort/{id}")
     public String types(@PageableDefault(size = 15, sort = {"publishTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model, @PathVariable Long id, BlogQuery blog) {
-        if(id != -1){
+        if (id != -1) {
             blog.setTypeId(id);
             model.addAttribute("page", blogService.listBlog(pageable, blog));
         } else {
@@ -57,8 +57,8 @@ public class TypeTagController {
 
     @GetMapping("/label/{id}")
     public String tags(@PageableDefault(size = 15, sort = {"publishTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                        Model model, @PathVariable Long id, BlogQuery blog) {
-        if(id != -1){
+                       Model model, @PathVariable Long id, BlogQuery blog) {
+        if (id != -1) {
             model.addAttribute("page", blogService.listBlogByTagId(pageable, id));
         } else {
             model.addAttribute("page", blogService.listBlog(pageable));

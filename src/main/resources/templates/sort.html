@@ -139,8 +139,9 @@
                     </div>
                     <div class="five wide column">
                         <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
-                            <img src="../static/images/img_3.png" th:src="@{/images/img_3.png}" alt=""
-                                 class="ui rounded image">
+                            <img src="../static/images/img_3.png"
+                                 th:src="${blog.picture == null || blog.picture == ''}? '/images/img_3.png' : ${blog.picture}"
+                                 alt="" class="ui rounded bordered image">
                         </a>
                     </div>
                 </div>

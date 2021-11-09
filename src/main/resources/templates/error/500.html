@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <title>500</title>
 </head>
 <body>
-<h1>500</h1>
+
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padding-tiny">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui orange header item">ZKT</h2>
+            <a href="#" class="item m-item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="folder icon"></i>分类</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<div class="c3 m-padding-big">
+    <div class="ui container">
+        <div class="ui segment">
+            <br>
+            <h1 style="color: #ef1f18; margin-left: 3em">500</h1>
+            <h3 style="color: #ef1f18; margin-left: 3em">HTTP-Internal Server Error</h3>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padding-huge">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="item">
+                    <img src="../static/images/240px-TestImage.jpg" class="rounded image" alt=""
+                         style="width: 110px">
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                    <a href="#" class="item">test test</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-opacity-70">test</h4>
+                <p class="m-padding-medium m-opacity-70 m-text-spaced m-text-thin m-text-lined">
+                    test test test test test test test test test test test test test test
+                    test test test test test test test test test test test test test test
+                    test test test test test test test
+                </p>
+            </div>
+        </div>
+
+        <div class="ui inverted section divider"></div>
+        <p class="m-padding-medium m-text-spaced m-text-thin m-opacity-70">
+            test test test test test test test test test test test test test test
+        </p>
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+
 </body>
 </html>

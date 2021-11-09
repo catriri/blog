@@ -13,6 +13,7 @@ public class Blog {
     @GeneratedValue
     private Long id;
     private String title;
+    private String picture;
 
     @Basic(fetch = FetchType.LAZY)
     @Lob
@@ -88,6 +89,14 @@ public class Blog {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 
     public String getContent() {
